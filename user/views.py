@@ -2,6 +2,10 @@ from django.shortcuts import render, redirect
 from .admin import UserCreationForm
 from django.contrib import messages
 
+
+def home(request):
+    return render(request, 'user/home.html')
+    
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
