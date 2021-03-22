@@ -1,0 +1,54 @@
+body{
+  background-color: #1a1814;
+  color: white;
+}
+nav{
+  background-color:#8e6113;
+  padding: auto 25px;
+}
+.navbar .navbar-brand{
+  color: #610101;
+  font-weight: bolder;
+}
+@media (min-width:1200px){
+  .navbar .navbar-brand{
+    font-size: 22px;
+    margin-left : 300px;
+  }
+  .navbar-nav{
+    position: relative;
+    margin-left: 600px;
+  }
+}
+h2{
+  font-family: sans-serif;
+  color: #cda45e;
+  margin: 20px 0;
+}
+h2 span{
+  color: #b61b1b;
+  font-weight: bold;
+  font-size: 30px;
+}
+h3{
+  color:#cda45e;
+  font-weight: bolder;
+}
+form{
+  margin: 20px 0 20px 10px;
+  padding: 3%;
+  padding-bottom: 20px;
+  border: 2px solid #cda45e;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #cda45e;
+}
+input{
+  margin:15px auto;
+}
+.btn-submit{
+  background-color: brown;
+  color: white;
+  display: inline-block;
+  border-radius: 5px;
+  margin:10px 25px;
+}
