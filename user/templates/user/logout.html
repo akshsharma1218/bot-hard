@@ -1,2 +1,10 @@
-<h1>You have been logout</h1>
-<a href="{% url 'login' %}">Login again</a>
+{% extends "user/form.html" %}
+{% block content %}
+<div class="container form  mx-auto " style="margin-top: 150px;">
+    <h1>You have been logout</h1>
+    <a style=" color: #45A29E; text-decoration: none !important; background-color: transparent; "
+        href="{% url 'login' %}">Login
+        again</a>
+</div>
+
+{%endblock%}
