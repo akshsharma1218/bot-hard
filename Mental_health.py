@@ -1,6 +1,9 @@
+#!/usr/bin/env python3
+
 import json
 from nltk.stem.lancaster import LancasterStemmer
 import nltk
+nltk.download('punkt')
 import numpy as np
 stemmer = LancasterStemmer()
 def encode_sentence(all_words, sentence, bag):
@@ -82,9 +85,9 @@ def classify(sentence, show_details=False):
     return_results = [[classes[r[0]], r[1]] for r in results]
     print("%s \n classification: %s \n" % (sentence, return_results))
     return return_results
-
-input_sentiment = input("Hi :) How are you feeling today ? ")
-# print(input_sentiment)
-# print(classify(input_sentiment)[0][0])
-sentiment = classify(input_sentiment)[0][0]
-print(sentiment)
+while(1):
+    input_sentiment = input("Hi :) How are you feeling today ? ")
+    # print(input_sentiment)
+    # print(classify(input_sentiment)[0][0])
+    sentiment = classify(input_sentiment)[0][0]
+    print(sentiment)
