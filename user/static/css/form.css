@@ -3,11 +3,14 @@ body{
   color: white;
 }
 nav{
-  background-color:#45A29E;
+  background-color:#212529;
   padding: auto 25px;
 }
+.nav-link, .navbar-brand{
+  color: rgb(197, 239, 228) !important;
+  text-shadow: 0 0 0.45px white;
+}
 .navbar .navbar-brand{
-  color: #d0dbe7;
   font-weight: bolder;
 }
 @media (min-width:1200px){
@@ -26,7 +29,7 @@ h2{
   margin: 20px 0;
 }
 h2 span{
-  font-family: Helvetica,sans-serif; 
+  font-family: Helvetica,sans-serif;
   color: #1ed1a4;
   font-weight: bold;
   font-size: 30px;
@@ -54,4 +57,5 @@ input{
   display: inline-block;
   border-radius: 5px;
   margin:10px 25px;
+  padding-top: 4px;
 }
