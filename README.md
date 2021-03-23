@@ -1,4 +1,5 @@
 # bot-hard
 
-pip install django \n
+pip install django 
+
 python manage.py runserver
