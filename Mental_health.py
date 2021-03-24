@@ -83,11 +83,11 @@ def classify(sentence, show_details=False):
     results = [[i, r] for i, r in enumerate(results) if r > ERROR_THRESHOLD]
     results.sort(key=lambda x: x[1], reverse=True)
     return_results = [[classes[r[0]], r[1]] for r in results]
-    print("%s \n classification: %s \n" % (sentence, return_results))
+    print("%s \n classification aksh: %s \n" % (sentence, return_results))
     return return_results
-while(1):
-    input_sentiment = input("Hi :) How are you feeling today ? ")
-    # print(input_sentiment)
-    # print(classify(input_sentiment)[0][0])
-    sentiment = classify(input_sentiment)[0][0]
-    print(sentiment)
+
+# input_sentiment = input("Hi :) How are you feeling today ? ")
+# print(input_sentiment)
+#
+# sentiment = classify(input_sentiment)[0][1][0] + 1
+# print(sentiment)

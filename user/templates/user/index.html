@@ -1,0 +1,32 @@
+{% extends "user/form.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+  <form class="form" action="{% url 'index' %}" method="post">
+    <img class="ak_img center" src="{% static 'img/akstyle.jpeg' %}" alt="">
+    {% csrf_token %}
+    <input class="ak_input" type="text" placeholder="How are you feeling?" name="reason">
+  </form>
+</div>
+<div class="container">
+  <ul class="list-group">
+    {% for x in list %}
+    <li class="ak">{{x}}</li>
+    {% endfor %}
+  </ul>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('input').focus()
+    $('li.ak:first-child').css({
+      "color":"rgb(197, 239, 228)",
+      "font-weight":"bolder",
+      "list-style":"none",
+      "margin":"10px 0 5px -5px",
+      "text-transform": "capitalize",
+      "font-size":"26px",
+      "transition":"0s",
+    });
+  })
+</script>
+{%endblock%}

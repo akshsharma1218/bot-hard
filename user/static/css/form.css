@@ -59,3 +59,15 @@ input{
   margin:10px 25px;
   padding-top: 4px;
 }
+.ak{
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.ak_input{
+  display: block;
+}
+.ak_img{
+  display: block;
+  margin: 10px auto 40px auto;
+}
