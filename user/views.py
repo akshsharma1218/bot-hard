@@ -17,6 +17,9 @@ sadness_value = 0
 def home(request):
     return render(request, 'user/home.html')
 
+def about(request):
+    return render(request, 'user/about.html')
+
 def index(request):
     if request.method == 'POST':
         reason = request.POST.get('reason')
