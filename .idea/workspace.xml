@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16d3f356-9db1-4978-8b63-2fa46c9f7c3f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mental_health.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mental_health.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test data/anger_test_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test data/fear_test_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test data/joy_test_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test data/sadness_test_set.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-anger-test-gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-fear-test-gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-joy-test-gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-sadness-test-gold.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="sentiments.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -66,10 +59,33 @@
       <option name="presentableId" value="Default" />
       <updated>1616613526365</updated>
       <workItem from="1616613527446" duration="24000" />
+      <workItem from="1616613744320" duration="96000" />
+      <workItem from="1616613843947" duration="90000" />
+      <workItem from="1616613937096" duration="274000" />
+      <workItem from="1616614216131" duration="18000" />
+      <workItem from="1616663413835" duration="312000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1616614212856">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1616614212856" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1616614212855">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1616614212855" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1616614212855">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1616614212855" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1616614212855">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1616614212855" />
   </component>
 </project>

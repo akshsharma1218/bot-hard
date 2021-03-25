@@ -1,5 +1,7 @@
 
 import ktrain
+
+predictor = ktrain.load_predictor(r'bert_model')
 def pred(que):
-    predictor=ktrain.load_predictor(r'bert_model')
+
     return predictor.predict(que)
