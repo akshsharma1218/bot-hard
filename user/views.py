@@ -3,6 +3,7 @@ from .admin import UserCreationForm
 from django.contrib import messages
 from Mental_health import pred
 import statistics
+from django.contrib.auth.decorators import login_required
 
 list = []
 sentiment_value_joy = []
@@ -14,34 +15,26 @@ anger_value = 0
 fear_value = 0
 sadness_value = 0
 
-
+@login_required
 def home(request):
-    return render(request, 'user/home.html')
-
+    user = request.user
+    context = {'n':range(20), 'user':user}
+    return render(request, 'user/home.html', context)
 
 def about(request):
     return render(request, 'user/about.html')
-
 
 def index(request):
     if request.method == 'POST':
         reason = request.POST.get('reason')
         sentiment = pred(reason)
-        if sentiment == 'joy':
-            print("joy got it")
-        if sentiment == 'anger':
-            print("anger got it")
-        if sentiment == 'fear':
-            print("fear got it")
-        if sentiment == 'sadness':
-            print("sadness got it")
-        list.insert(0, (sentiment));
+        print(sentiment)
+        list.insert(0,(sentiment))
         print(list)
         if len(list) > 5:
-            del list[len(list) - 1]
-    context = {'list': list}
+            del list[len(list)-1]
+    context = {'list' : list}
     return render(request, 'user/index.html', context)
-
 
 def register(request):
     if request.method == 'POST':
@@ -53,5 +46,5 @@ def register(request):
             return redirect('login')
     else:
         form = UserCreationForm()
-    context = {'form': form}
-    return render(request, 'user/register.html', context)
+    context = {'form':form}
+    return render(request,'user/register.html',context)

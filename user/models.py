@@ -8,6 +8,7 @@ class User(AbstractUser):
     email     = models.EmailField()
     rel_num   = models.CharField(validators=[phone_reg], max_length=13, blank=True)
     anxiety   = models.IntegerField(null=True)
+    diary     = models.TextField(null=True)
 
 
     def __str__(self):
