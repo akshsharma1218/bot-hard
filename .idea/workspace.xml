@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="16d3f356-9db1-4978-8b63-2fa46c9f7c3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/test data/anger_test_set.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test data/fear_test_set.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test data/joy_test_set.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test data/sadness_test_set.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-anger-test-gold.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-fear-test-gold.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-joy-test-gold.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/training data/2018-EI-reg-En-sadness-test-gold.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/migrations/0002_user_diary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bot-hard.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mental_health.py" beforeDir="false" afterPath="$PROJECT_DIR$/Mental_health.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test data/data_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/training data/data_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/static/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/static/css/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/user/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="56da7c4d-2c3c-4752-bc25-ee07bafacdc9" />
+  <component name="ProjectId" id="1qDUCY2uEL0UdPRXG8GpteMXSXg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="bot-hard" type="Python.DjangoServer" factoryName="Django server">
+      <module name="bot-hard" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="sentiments.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\asus\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16d3f356-9db1-4978-8b63-2fa46c9f7c3f" name="Default Changelist" comment="" />
+      <created>1616613526365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616613526365</updated>
+      <workItem from="1616613527446" duration="24000" />
+      <workItem from="1616613744320" duration="96000" />
+      <workItem from="1616613843947" duration="90000" />
+      <workItem from="1616613937096" duration="274000" />
+      <workItem from="1616614216131" duration="18000" />
+      <workItem from="1616663413835" duration="581000" />
+      <workItem from="1616664001710" duration="1167000" />
+      <workItem from="1616665241284" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="195" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616664126092">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="414" y="195" width="1092" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1616664126092" />
+    <state width="914" height="295" key="GridCell.Tab.0.bottom" timestamp="1616665176369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1616665176369" />
+    <state width="914" height="295" key="GridCell.Tab.0.center" timestamp="1616665176369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1616665176369" />
+    <state width="914" height="295" key="GridCell.Tab.0.left" timestamp="1616665176369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1616665176369" />
+    <state width="914" height="295" key="GridCell.Tab.0.right" timestamp="1616665176369">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="914" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1616665176369" />
+    <state x="461" y="204" key="SettingsEditor" timestamp="1616663995157">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="461" y="204" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1616663995157" />
+  </component>
+</project>
