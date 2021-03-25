@@ -3,6 +3,7 @@ from .admin import UserCreationForm
 from django.contrib import messages
 from Mental_health import classify
 import statistics
+from django.contrib.auth.decorators import login_required
 
 list = []
 sentiment_value_joy = []
@@ -14,8 +15,11 @@ anger_value = 0
 fear_value = 0
 sadness_value = 0
 
+@login_required
 def home(request):
-    return render(request, 'user/home.html')
+    user = request.user
+    context = {'n':range(20), 'user':user}
+    return render(request, 'user/home.html', context)
 
 def index(request):
     if request.method == 'POST':

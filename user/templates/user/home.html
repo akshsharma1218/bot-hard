@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>BHA VNA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +21,7 @@
     <!-- Bootstrap core CSS -->
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -78,6 +79,8 @@
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://rawcdn.githack.com/akzhy/Vara/c55a1b40c15b808cdd4a047de95c905094be87db/src/vara.min.js"></script>
 </head>
 
 <body>
@@ -187,9 +190,59 @@
                         </button>
                     </div>
                 </div>
-
-                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-
+                <div class="container mt-5 ">
+                  <h2 class="mx-auto" >Welcome <span style="text-transform:uppercase">{{user.username}}</span></h2>
+                  <div class="container">
+                    <h3>Profile</h3>
+                    <div class="ak_cont">
+                      <div class="col-md-4" style="margin-top:7em">
+                        <p>Name : <span class="ak-span">{{user.username}}</span></p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>E-mail : <span class="ak-span">{{user.email}}</span></p>
+                      </div>
+                      <div class="container-fluid">
+                      <div class="v-center"></div>
+                      <div style="height:10em" id="container">
+                        <div class="book">
+                          <div class="first paper">
+                            <div class="page front contents">
+                              <div class="intro">
+                                <h2>My</h2>
+                                <h2>Diary</h2>
+                              </div>
+                            </div>
+                            <div class="page back"></div>
+                          </div>
+                          <div class="second paper">
+                            <div class="page front contents">
+                              <div id="vara-container"></div>
+                            </div>
+                            <div class="page back"></div>
+                          </div>
+                          <div class="third paper">
+                            <div class="page front contents">
+                              <div id="vara-container2"></div>
+                            </div>
+                            <div class="page back"></div>
+                          </div>
+                          <div class="fourth paper">
+                            <div class="page last front contents">
+                              <div id="vara-container3"></div>
+                            </div>
+                            <div class="page back"></div>
+                          </div>
+                          <div class="side"></div>
+                          <div class="bottom"></div>
+                          <div class="shadow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
                 <h2>Section title</h2>
                 <div class="table-responsive">
                     <table class="table table-striped table-sm">
@@ -203,119 +256,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1,001</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,002</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,003</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,004</td>
-                                <td>text</td>
-                                <td>random</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,005</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                            </tr>
-                            <tr>
-                                <td>1,006</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,007</td>
-                                <td>placeholder</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>irrelevant</td>
-                            </tr>
-                            <tr>
-                                <td>1,008</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>text</td>
-                            </tr>
-                            <tr>
-                                <td>1,009</td>
-                                <td>placeholder</td>
-                                <td>irrelevant</td>
-                                <td>visual</td>
-                                <td>layout</td>
-                            </tr>
-                            <tr>
-                                <td>1,010</td>
-                                <td>data</td>
-                                <td>rich</td>
-                                <td>dashboard</td>
-                                <td>tabular</td>
-                            </tr>
-                            <tr>
-                                <td>1,011</td>
-                                <td>information</td>
-                                <td>placeholder</td>
-                                <td>illustrative</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,012</td>
-                                <td>text</td>
-                                <td>placeholder</td>
-                                <td>layout</td>
-                                <td>dashboard</td>
-                            </tr>
-                            <tr>
-                                <td>1,013</td>
-                                <td>dashboard</td>
-                                <td>irrelevant</td>
-                                <td>text</td>
-                                <td>visual</td>
-                            </tr>
-                            <tr>
-                                <td>1,014</td>
-                                <td>dashboard</td>
-                                <td>illustrative</td>
-                                <td>rich</td>
-                                <td>data</td>
-                            </tr>
-                            <tr>
-                                <td>1,015</td>
-                                <td>random</td>
-                                <td>tabular</td>
-                                <td>information</td>
-                                <td>text</td>
-                            </tr>
-                        </tbody>
+                          {% for x in n %}
+                          <tr>
+                              <td>1,001</td>
+                              <td>random</td>
+                              <td>data</td>
+                              <td>placeholder</td>
+                              <td>text</td>
+                          </tr>
+                          {% endfor %}
                     </table>
                 </div>
             </main>
@@ -334,12 +283,177 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
+    <script type="text/javascript">
+    var winWidth = $(window).width();
+    var ratio = winWidth / 1920;
+    var fontSize = {
+    small: 12,
+    medium: 14
+    };
+    var played = [0, 0, 0];
+    var vara = [];
+    var bodyFontSize = Math.max(16 * ratio, 10);
+    var posX = Math.max(80 * ratio, 30);
+    $("body").css("font-size", bodyFontSize + "px");
+    fontSize.small = Math.max(fontSize.small * ratio, 7);
+    fontSize.medium = Math.max(fontSize.medium * ratio, 10);
+    vara[0] = new Vara(
+    "#vara-container",
+    "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json",
+    [
+      {
+        text: "15 Jan 2019",
+        textAlign: "right",
+        y: 20,
+        x: -30,
+        delay: 500,
+        duration: 1500,
+        fontSize: fontSize.small
+      },
+      {
+        text: "Start the year with something cool.",
+        y: 40,
+        x: posX,
+        duration: 4000
+      },
+      {
+        text: "Like with a library,",
+        id: "sphinx",
+        x: posX,
+        delay: 1000,
+        duration: 4500
+      },
+      {
+        text: "..... that can animate text writing",
+        id: "end",
+        color: "#3f51b5",
+        delay: 1000,
+        x: posX,
+        duration: 4500
+      }
+    ],
+    {
+      strokeWidth: 2,
+      fontSize: fontSize.medium,
+      autoAnimation: false
+    }
+    );
+    vara[1] = new Vara(
+    "#vara-container2",
+    "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json",
+    [
+      {
+        text: "16 Jan 2019",
+        textAlign: "right",
+        delay: 500,
+        y: 20,
+        x: -30,
+        duration: 1500,
+        fontSize: fontSize.small
+      },
+      {
+        text: "Try to create something else.",
+        y: 40,
+        x: posX,
+        duration: 4000
+      },
+      {
+        text: "Like a diary or a todo list.",
+        y: 40,
+        x: posX,
+        duration: 3500
+      }
+    ],
+    {
+      strokeWidth: 2,
+      fontSize: fontSize.medium,
+      autoAnimation: false
+    }
+    );
+    vara[2] = new Vara(
+    "#vara-container3",
+    "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json",
+    [
+      {
+        text: "17 Jan 2019",
+        textAlign: "right",
+        delay: 500,
+        y: 20,
+        x: -30,
+        duration: 1500,
+        fontSize: fontSize.small
+      },
+      {
+        text: "Creating a Diary.",
+        y: 40,
+        x: posX,
+        duration: 4000
+      },
+      {
+        text: "View the library on,",
+        y: 20,
+        x: posX,
+        duration: 3500
+      },
+      {
+        text: "Github.",
+        y: 10,
+        color: "#3f51b5",
+        id: "link",
+        x: posX,
+        duration: 1500
+      }
+    ],
+    {
+      strokeWidth: 2,
+      fontSize: fontSize.medium,
+      autoAnimation: false
+    }
+    );
+    vara[2].ready(function() {
+    $(".front:not(.last)").click(function() {
+      var ix = $(this)
+        .parent(".paper")
+        .index();
+      $(".book").addClass("open");
+      $(this)
+        .parent(".paper")
+        .addClass("open");
+      if (!played[ix]) {
+        vara[ix].playAll();
+        vara[ix].animationEnd(function(i, o) {
+          played[ix] = 1;
+          if (i == "link") {
+            var group = o.container;
+            var rect = vara[2].createNode("rect", {
+              x: 0,
+              y: 0,
+              width: o.container.getBoundingClientRect().width,
+              height: o.container.getBoundingClientRect().height,
+              fill: "transparent"
+            });
+            group.appendChild(rect);
+            $(rect).css("cursor", "pointer");
+            $(rect).click(function() {
+              console.log(true);
+              document.querySelector("#link").click();
+            });
+          }
+        });
+      }
+    });
+    $(".back").click(function() {
+      if (
+        $(this)
+          .parent(".paper")
+          .index() == 0
+      )
+        $(".book").removeClass("open");
+      $(this)
+        .parent(".paper")
+        .removeClass("open");
+    });
+    });
+    </script>
 </body>
-
 </html>
