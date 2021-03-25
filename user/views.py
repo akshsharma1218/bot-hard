@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .admin import UserCreationForm
 from django.contrib import messages
-from Mental_health import classify
+from Mental_health import pred
 import statistics
 from django.contrib.auth.decorators import login_required
 
@@ -27,20 +27,9 @@ def about(request):
 def index(request):
     if request.method == 'POST':
         reason = request.POST.get('reason')
-        sentiment = classify(reason)[0][0]
-        if sentiment == 'joy':
-            sentiment_value_joy.append(classify(reason)[0][1][0])
-            joy_value = statistics.mean(sentiment_value_joy)
-        if sentiment == 'anger':
-            sentiment_value_anger.append(classify(reason)[0][1][0])
-            anger_value = statistics.mean(sentiment_value_anger)
-        if sentiment == 'fear':
-            sentiment_value_fear.append(classify(reason)[0][1][0])
-            fear_value = statistics.mean(sentiment_value_fear)
-        if sentiment == 'sadness':
-            sentiment_value_sadness.append(classify(reason)[0][1][0])
-            sadness_value = statistics.mean(sentiment_value_sadness)
-        list.insert(0,(sentiment));
+        sentiment = pred(reason)
+        print(sentiment)
+        list.insert(0,(sentiment))
         print(list)
         if len(list) > 5:
             del list[len(list)-1]
