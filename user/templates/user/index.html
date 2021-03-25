@@ -5,19 +5,14 @@
 
   <form class="form" action="{% url 'index' %}" method="post">
     <div class="conay">
-      <div class="box item sb4 ">I'm speech bubble</div>
-      <div class="box item sb3  ">I'm speech bubble</div>
+      <div class="box item sb4 ">{{que}}</div>
+      <div class="box item sb3  ">{{que}}</div>
     </div>
-
-    ​
     <img class="ak_img center" src="{% static 'img/akstyle.jpeg' %}" alt="">
     <div class="conay mt-5">
-
-
-      ​ <div class="box item sb1 ">I'm speech bubble</div>
-      <div class="box item sb2 ">I'm speech bubble</div>
+      ​<div class="box item sb1 ">{{que}}</div>
+      <div class="box item sb2 ">{{que}}</div>
     </div>
-
     {% csrf_token %}
     <input class="ak_input" type="text" placeholder="How are you feeling?" name="reason">
   </form>
