@@ -1,4 +1,4 @@
 *.log
-.pyc
-.vscode
-.idea
+*.pyc
+*.vscode
+*.idea
