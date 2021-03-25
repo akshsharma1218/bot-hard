@@ -21,6 +21,9 @@ def home(request):
     context = {'n':range(20), 'user':user}
     return render(request, 'user/home.html', context)
 
+def about(request):
+    return render(request, 'user/about.html')
+
 def index(request):
     if request.method == 'POST':
         reason = request.POST.get('reason')
