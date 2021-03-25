@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .admin import UserCreationForm
 from django.contrib import messages
-from Mental_health import pred
+# from Mental_health import pred
 import statistics
 from django.contrib.auth.decorators import login_required
 
@@ -27,12 +27,11 @@ def about(request):
 def index(request):
     if request.method == 'POST':
         reason = request.POST.get('reason')
-        sentiment = pred(reason)
-        print(sentiment)
-        list.insert(0,(sentiment))
-        print(list)
-        if len(list) > 5:
-            del list[len(list)-1]
+        # sentiment = pred(reason)
+        # list.insert(0,(sentiment))
+        # print(list)
+        # if len(list) > 5:
+        #     del list[len(list)-1]
     context = {'list' : list}
     return render(request, 'user/index.html', context)
 

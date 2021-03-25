@@ -1,0 +1,117 @@
+.conay {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.box {
+    border-radius: 20px;
+    width: 400px;
+    margin: 0px 50px;
+    background: #00bfb6;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    font-family: arial;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 2s;
+
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+
+
+    }
+
+    25% {
+        opacity: 0.4;
+
+
+    }
+
+    50% {
+        opacity: 0.6;
+
+    }
+
+    75% {
+        opacity: 0.8;
+
+    }
+
+    100% {
+        opacity: 1;
+
+
+    }
+}
+
+.sb1:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #0b0c10;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #0b0c10;
+    border-bottom: 10px solid transparent;
+    right: -19px;
+    top: 12px;
+}
+.aksh_op.sb1:before, .aksh_op.sb3:before{
+  border-top: 10px solid rgb(197, 239, 228) !important;
+  border-left: 10px solid rgb(197, 239, 228) !important;
+}
+.aksh_op.sb4:before, .aksh_op.sb2:before {
+  border-right: 10px solid rgb(197, 239, 228) !important;
+  border-top: 10px solid rgb(197, 239, 228) !important;
+}
+
+.sb2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #0b0c10;
+    border-top: 10px solid #0b0c10;
+    border-bottom: 10px solid transparent;
+    left: -19px;
+    top: 12px;
+}
+
+.sb3:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid #0b0c10;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #0b0c10;
+    border-bottom: 10px solid transparent;
+    left: 19px;
+    bottom: -19px;
+}
+
+.sb4:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #0b0c10;
+    border-top: 10px solid #0b0c10;
+    border-bottom: 10px solid transparent;
+    right: 19px;
+    bottom: -19px;
+}
+
+.item {
+    background-color: #0B0C10;
+    color: #0B0C10;
+}

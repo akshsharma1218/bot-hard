@@ -2,8 +2,22 @@
 {% block content %}
 {% load static %}
 <div class="container">
+
   <form class="form" action="{% url 'index' %}" method="post">
+    <div class="conay">
+      <div class="box item sb4 ">I'm speech bubble</div>
+      <div class="box item sb3  ">I'm speech bubble</div>
+    </div>
+
+    ​
     <img class="ak_img center" src="{% static 'img/akstyle.jpeg' %}" alt="">
+    <div class="conay mt-5">
+
+
+      ​ <div class="box item sb1 ">I'm speech bubble</div>
+      <div class="box item sb2 ">I'm speech bubble</div>
+    </div>
+
     {% csrf_token %}
     <input class="ak_input" type="text" placeholder="How are you feeling?" name="reason">
   </form>
@@ -16,17 +30,27 @@
   </ul>
 </div>
 <script type="text/javascript">
-  $(document).ready(function(){
+  $(document).ready(function () {
     $('input').focus()
     $('li.ak:first-child').css({
-      "color":"rgb(197, 239, 228)",
-      "font-weight":"bolder",
-      "list-style":"none",
-      "margin":"10px 0 5px -5px",
+      "color": "rgb(197, 239, 228)",
+      "font-weight": "bolder",
+      "list-style": "none",
+      "margin": "10px 0 5px -5px",
       "text-transform": "capitalize",
-      "font-size":"26px",
-      "transition":"0s",
+      "font-size": "26px",
+      "transition": "0s",
     });
   })
+</script>
+<script>
+  $(document).ready(function(){
+    var random_ak = Math.floor(Math.random() * $('.item').length);
+    $("div.item").eq(random_ak).css({
+            "color": "rgb(0, 0, 0)",
+            "background":"rgb(197, 239, 228)",
+    });
+    $("div.item").eq(random_ak).toggleClass("aksh_op")
+  });
 </script>
 {%endblock%}
