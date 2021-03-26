@@ -17,4 +17,5 @@ According to WHO, India accounted for nearly 15 percent of the global mental, ne
 * It will be a continuous judgement process as we can’t say that the user is in depression by judging him for a day.. We will judge the user for about 3-4 days and if the sentiment we are receiving is continuously anger or sad then we can say that the user is suffering from depression or any mental illness. At that very moment if we find that the case is extreme then we can notify the users relative.
 * As we also have a diary section in our website, if the user has written a diary and it’s sentiment is joy then we will show the user his/her past happy thoughts.
 * User will be provided with a graphical report on our website of different sentiments 
+* Video demo https://youtu.be/FErI-6ATPJw
 
