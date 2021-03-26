@@ -1,5 +1,5 @@
 # Bhavna
-<img src="public/DSP-in-python.jpeg" alt="image" width="100%">
+![bot-hard](https://socialify.git.ci/akshsharma1218/bot-hard/image?description=1&descriptionEditable=A%20website%20that%20can%20detect%20mental%20illness%20and%20help%20people%20overcome%20them%0A&language=1&theme=Light)
 
 # About the project
 * Mental health issues are generally undetected or are not recognised for an individual's entire lifetime. They accept their situations and don't even realise that there might be a better way of living life and feeling things. In India, with 10 percent of its 1.3 billion-strong population having suffered from one or more mental health problems.
