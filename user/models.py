@@ -19,7 +19,7 @@ class User(AbstractUser):
         return self.username
 
 class Questions(models.Model):
-    question_joy   = ListCharField(base_field = models.CharField(max_length=80), size = 20, max_length = 20 * 81)
+    question_joy   = ListCharField(base_field = models.CharField(max_length=100), size = 20, max_length = 20 * 101)
     question_fear  = ListCharField(base_field = models.CharField(max_length=80), size = 20, max_length = 20 * 81)
     question_sad   = ListCharField(base_field = models.CharField(max_length=80), size = 20, max_length = 20 * 81)
     question_anger = ListCharField(base_field = models.CharField(max_length=80), size = 20, max_length = 20 * 81)

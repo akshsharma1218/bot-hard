@@ -23,13 +23,16 @@ def about(request):
 @login_required
 def diary(request):
     if request.method == 'POST':
-        content = request.POST.get('diarycontent')
+        content = request.POST['diarycontent']
+        print("aksh")
+        print(content)
         user = request.user
-        user.diary = content
+        user.diary += content
         user.save()
-    date = timezone.now()
-    context = {'date':date}
-    return render(request, 'user/diary.html')
+        return redirect('home')
+    date_is = timezone.now()
+    context = {'date':date_is}
+    return render(request, 'user/diary.html',context)
 
 @login_required
 def index(request):

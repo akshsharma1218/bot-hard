@@ -3,7 +3,7 @@
 <form action = "{% url 'diary' %}" method="post" id = "diary">
   {% csrf_token %}
   <div class="col-md-6">
-    <textarea name="diarycontent" form="user">Date:{{date}}<br></textarea>
+    <textarea id ="diarycontent" name="diarycontent" form="diary">Date: {{date}} </textarea>
   </div>
   <button class="btn-submit" type="submit" name="button">Submit</button>
 </form>
