@@ -4,8 +4,9 @@ from .admin import UserCreationForm
 from django.contrib import messages
 from Mental_health import pred
 from .models import *
+from django.utils import timezone
 import statistics
-import secrets
+import random
 
 list = []
 
@@ -15,8 +16,20 @@ def home(request):
     context = {'n':range(20), 'user':user}
     return render(request, 'user/home.html', context)
 
+@login_required
 def about(request):
     return render(request, 'user/about.html')
+
+@login_required
+def diary(request):
+    if request.method == 'POST':
+        content = request.POST.get('diarycontent')
+        user = request.user
+        user.diary = content
+        user.save()
+    date = timezone.now()
+    context = {'date':date}
+    return render(request, 'user/diary.html')
 
 @login_required
 def index(request):
@@ -29,26 +42,28 @@ def index(request):
         list.append(sentiment)
         user.list.append(sentiment)
         user.save()
-        if sentiment == 'joy':
-            question = questions.question_joy
-            que      = secrets.choice(question)
-            # que      = "happy"
-        elif sentiment == 'sadness':
-            question = questions.question_sad
-            que      = secrets.choice(question)
-            # que      = "sad"
-        elif sentiment == 'fear':
-            question = questions.question_fear
-            que      = secrets.choice(question)
-            # que      = "fear"
-        elif sentiment == 'anger':
-            question = questions.question_anger
-            que      = secrets.choice(question)
-            # que      = "anger"
-        else:
-            que = "ok... tell us some more"
-    else:
-        que = "How are you feeling?"
+    #     if sentiment == 'joy':
+    #         question = questions.question_joy
+    #         que      = random.choice(question)
+    #         # que      = "happy"
+    #     elif sentiment == 'sadness':
+    #         question = questions.question_sad
+    #         que      = random.choice(question)
+    #         # que      = "sad"
+    #     elif sentiment == 'fear':
+    #         question = questions.question_fear
+    #         que      = random.choice(question)
+    #         # que      = "fear"
+    #     elif sentiment == 'anger':
+    #         question = questions.question_anger
+    #         que      = random.choice(question)
+    #         # que      = "anger"
+    #     else:
+    #         que = "ok... tell us some more"
+    # else:
+    #     que = "How are you feeling?"
+    question = questions.question_joy
+    que      = random.choice(question)
     context = {'que' : que,'list':list }
     return render(request, 'user/index.html', context)
 

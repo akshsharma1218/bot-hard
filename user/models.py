@@ -25,4 +25,4 @@ class Questions(models.Model):
     question_anger = ListCharField(base_field = models.CharField(max_length=80), size = 20, max_length = 20 * 81)
 
     def __str__(self):
-        return 'Questions'
+        return 'Question'
